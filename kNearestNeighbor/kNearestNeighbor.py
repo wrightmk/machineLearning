@@ -1,3 +1,5 @@
+#skleanrs k nearest neighbors is threaded which is why it was much faster at performance than our k nearest neighbor build from scratch when doing 25 iterations. (accuracy proved to be the same!)
+
 # classification: general purpose is to create a model that best divides our data
 
 # clustering (dividing data into groups)
@@ -11,6 +13,8 @@
 
 #downfalls are that it measures distance using eucloiden distances which is a long tedious process that is more costly as the data set grows becasue it has to compare test points to all points in the dataset (can do a workaround using radius and defining all points outside of the radius as outliers but can still be costly)
 # support vector machines scale much better
+
+#upside is that it works on linear and nonlinear data can use the radius method to make it scale better because scalability is poor
 
 import numpy as np
 from sklearn import preprocessing, cross_validation, neighbors

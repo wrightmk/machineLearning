@@ -9,7 +9,7 @@ style.use('fivethirtyeight')
 # k is the feature (coordinates)
 # r is the class
 dataset = {'k':[[1,2],[2,3],[3,1]], 'r':[[6,5], [7,7], [8,6]]}
-new_features = [5,7]
+new_features = [5,4]
 
 def k_nearest_neighbors(data, predict, k=3):
     if len(data) >= k:
